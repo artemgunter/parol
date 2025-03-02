@@ -1,7 +1,8 @@
 import random
+import string
 
 # Переменная с возможными символами для пароля
-symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+symbols = string.ascii_letters + string.digits + "+-/*!&$#?=@"
 
 # Запрос длины пароля у пользователя
 password_length = int(input("Введите длину пароля: "))
